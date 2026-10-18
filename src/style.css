@@ -423,7 +423,7 @@ html.print-preview #print-cv { display: block; width: 210mm; min-height: 297mm; 
 }
 
 /* GitHub calendar: static data, no runtime requests or animation. */
-.github-section { padding-bottom: 1rem; }
+.github-section { padding-bottom: 3.5rem; }
 .github-card { padding: clamp(1.25rem, 3vw, 2rem); }
 .github-heading { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
 .github-heading h2 { margin-top: .9rem; font: 600 1.6rem/1.4 var(--font-display); }

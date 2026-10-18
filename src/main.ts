@@ -316,7 +316,7 @@ function footer(t: Dict) {
 }
 
 const screen = (t: Dict, lang: Lang) =>
-  nav(t, lang) + `<main>${hero(t)}${marquee()}${about(t)}${experience(t, lang)}${projectsSection(t)}${githubSection()}${stackSection(t)}${background(t)}${contact(t)}</main>` + footer(t)
+  nav(t, lang) + `<main>${hero(t)}${githubSection()}${marquee()}${about(t)}${experience(t, lang)}${projectsSection(t)}${stackSection(t)}${background(t)}${contact(t)}</main>` + footer(t)
 
 /* ---------- print ---------- */
 

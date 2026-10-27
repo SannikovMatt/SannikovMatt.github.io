@@ -101,6 +101,14 @@ export const projects: {id: ProjectId; name: string; url: string; badge: Badge; 
   }
 ]
 export const stack = {
+  "ai": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Antigravity",
+    "LLM tools",
+    "AI-assisted development"
+  ],
   "web3": [
     "Solidity",
     "EVM",
@@ -138,24 +146,20 @@ export const stack = {
     "AWS S3",
     "Railway",
     "Microsoft Azure"
-  ],
-  "ai": [
-    "Claude Code",
-    "Codex",
-    "LLM tools",
-    "AI-assisted development"
   ]
 }
 export type StackId = keyof typeof stack
+// AI coding tools used daily, in the terminal and in the IDE. Shown as a card in About.
+export const aiTools = ['Claude Code', 'Codex', 'Cursor', 'Antigravity']
 export const spoken = [['ru','native'],['en','fluent'],['cs','conversational'],['az','fluent']] as const
 const en = {
   "langName": "English",
   "name": "Dmitriy Sannikov",
-  "role": "Senior Software Engineer · Web3",
+  "role": "Senior Software Engineer · AI Tools & Web3",
   "prague": "Prague, Czechia · Remote",
   "meta": {
     "title": "Dmitriy Sannikov — Senior Software Engineer",
-    "description": "Senior software engineer in Prague. DeFi infrastructure, smart accounts and developer tools. Building Thyme Labs, Findex and BCkit."
+    "description": "Senior software engineer in Prague building AI-powered automation, DeFi infrastructure and developer tools. Building Thyme Labs, Findex and BCkit."
   },
   "nav": {
     "about": "About",
@@ -168,7 +172,7 @@ const en = {
   },
   "hero": {
     "status": "Open to senior engineering roles",
-    "tagline": "I build the software behind on-chain products: smart-account automation, DeFi integrations and tools developers use every day.",
+    "tagline": "I build AI-powered automation and the software behind on-chain products: AI agents that write on-chain functions, DeFi integrations and tools developers use every day.",
     "contact": "Get in touch",
     "print": "Print CV"
   },
@@ -178,12 +182,12 @@ const en = {
       "started in software"
     ],
     [
-      "3.5",
-      "years at First Line Software"
+      "12k+",
+      "commits"
     ],
     [
-      "2–5",
-      "engineers led on client projects"
+      "6+",
+      "years of experience"
     ],
     [
       "4",
@@ -197,7 +201,16 @@ const en = {
       "I'm Dmitriy, a software engineer based in Prague. I started in frontend development, grew into a senior role at First Line Software, and led teams delivering applications for accounting, manufacturing and insurance clients.",
       "Now I'm a founding team member and Lead Engineer at Neovate, working on DeFi infrastructure and developer tools. I work across TypeScript services, smart-account integrations and React interfaces, with Claude Code and Codex as part of my daily development workflow."
     ],
+    "ai": {
+      "title": "AI-native development",
+      "body": "AI agents are part of how I work every day, in the terminal and in the IDE. They draft, refactor, test and review; I own the architecture, the review and what ships.",
+      "modes": "CLI + IDE"
+    },
     "services": {
+      "ai": [
+        "AI-assisted development",
+        "Daily work with Claude Code, Codex and LLM tools to write and iterate on code across projects."
+      ],
       "contracts": [
         "DeFi & smart accounts",
         "Uniswap v2/v3/v4, liquidity integrations, swap routing and scoped execution with Safe and Zodiac Roles."
@@ -217,10 +230,6 @@ const en = {
       "frontend": [
         "Product interfaces",
         "React, Next.js and TanStack applications, from developer consoles to portfolio and trading dashboards."
-      ],
-      "ai": [
-        "AI-assisted development",
-        "Daily work with Claude Code, Codex and LLM tools to write and iterate on code across projects."
       ]
     }
   },
@@ -279,12 +288,12 @@ const en = {
     "label": "Stack",
     "title": "Tools I reach for",
     "groups": {
+      "ai": "AI & automation",
       "web3": "Web3",
       "frontend": "Frontend",
       "backend": "Backend",
       "data": "Data",
-      "cloud": "Cloud & DevOps",
-      "ai": "AI & automation"
+      "cloud": "Cloud & DevOps"
     }
   },
   "background": {
